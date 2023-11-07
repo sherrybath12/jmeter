@@ -1,0 +1,85 @@
+2023-11-07 11:30:54,150 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2023-11-07 11:30:54,195 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-11-07 11:30:54,196 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: Version 5.4.3
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: java.version=11.0.6
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: os.name=Mac OS X
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: os.arch=x86_64
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: os.version=10.16
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-11-07 11:30:54,206 INFO o.a.j.JMeter: java.awt.headless=null
+2023-11-07 11:30:54,207 INFO o.a.j.JMeter: Max memory     =4294967296
+2023-11-07 11:30:54,207 INFO o.a.j.JMeter: Available Processors =12
+2023-11-07 11:30:54,221 INFO o.a.j.JMeter: Default Locale=English (United States)
+2023-11-07 11:30:54,221 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2023-11-07 11:30:54,221 INFO o.a.j.JMeter: JMeterHome=/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3
+2023-11-07 11:30:54,221 INFO o.a.j.JMeter: user.dir  =/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/bin
+2023-11-07 11:30:54,221 INFO o.a.j.JMeter: PWD       =/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/bin
+2023-11-07 11:30:54,408 INFO o.a.j.JMeter: IP: 10.0.0.13 Name: C02D7HMKMD6M FullName: tc8-vm1.ghsinc.com
+2023-11-07 11:30:57,003 INFO o.a.j.JMeter: Setting LAF to: laf:com.apple.laf.AquaLookAndFeel
+2023-11-07 11:30:58,862 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-11-07 11:31:00,612 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-4e0ca68964249cbbbed622c69ea8c637-gui
+2023-11-07 11:31:02,279 INFO o.j.r.PluginManager: Plugins Status: [jpgc-plugins-manager=1.7, jpgc-webdriver=3.3, jmeter-core=5.4.3, jmeter-ftp=5.4.3, jmeter-http=5.4.3, jmeter-jdbc=5.4.3, jmeter-jms=5.4.3, jmeter-junit=5.4.3, jmeter-java=5.4.3, jmeter-ldap=5.4.3, jmeter-mail=5.4.3, jmeter-mongodb=5.4.3, jmeter-native=5.4.3, jmeter-tcp=5.4.3, jmeter-components=5.4.3]
+2023-11-07 11:31:02,280 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager, jpgc-webdriver]
+2023-11-07 11:38:01,815 INFO o.a.j.s.FileServer: Default base='/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/bin'
+2023-11-07 11:38:01,820 INFO o.a.j.g.a.Load: Loading file: /Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans/API_Test_Plan.jmx
+2023-11-07 11:38:01,820 INFO o.a.j.s.FileServer: Set new base='/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans'
+2023-11-07 11:38:02,004 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-11-07 11:38:02,020 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-11-07 11:38:02,022 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-11-07 11:38:02,024 INFO o.a.j.s.SaveService: Loading file: /Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans/API_Test_Plan.jmx
+2023-11-07 11:38:02,189 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 11:38:02,189 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 11:38:02,189 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 11:38:02,190 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-11-07 11:38:02,190 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-11-07 11:38:02,190 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-11-07 11:38:02,333 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-11-07 11:38:02,333 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-11-07 11:38:02,334 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-11-07 11:38:02,334 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-11-07 11:38:02,569 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2023-11-07 11:38:02,643 INFO o.a.j.s.FileServer: Set new base='/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans'
+2023-11-07 11:38:08,049 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-11-07 11:38:08,050 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 11:38:08,050 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-11-07 11:38:08,052 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-11-07 11:38:08,052 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-11-07 11:38:08,382 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-11-07 11:38:08,452 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2023-11-07 11:38:08,453 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group Thread Group.
+2023-11-07 11:38:08,453 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-11-07 11:38:08,453 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=1 delayedStart=false
+2023-11-07 11:38:08,460 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2023-11-07 11:38:08,461 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-11-07 11:38:08,461 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-11-07 11:38:08,475 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = C02D7HMKMD6M
+2023-11-07 11:38:08,485 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2023-11-07 11:38:08,659 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2023-11-07 11:38:08,856 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2023-11-07 11:38:08,988 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2023-11-07 11:38:08,990 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2023-11-07 11:38:08,991 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2023-11-07 11:38:09,058 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2023-11-07 11:38:09,125 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2023-11-07 11:38:09,126 INFO o.a.j.u.SSLManager: KeyStore created OK
+2023-11-07 11:38:09,126 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2023-11-07 11:38:09,260 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2023-11-07 11:38:09,650 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2023-11-07 11:38:09,691 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2023-11-07 11:38:09,691 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2023-11-07 11:38:09,692 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-11-07 11:38:09,692 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-11-07 11:38:34,447 INFO o.a.j.g.a.Load: Loading file: /Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans/UI_Test_Plan.jmx
+2023-11-07 11:38:34,448 INFO o.a.j.s.FileServer: Set new base='/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans'
+2023-11-07 11:38:34,448 INFO o.a.j.s.SaveService: Loading file: /Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans/UI_Test_Plan.jmx
+2023-11-07 11:38:34,541 INFO o.a.j.s.FileServer: Set new base='/Users/sbath/Documents/jmeter/jmeter-tests/apache-jmeter-5.4.3/TestPlans'
