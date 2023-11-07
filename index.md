@@ -27,14 +27,14 @@ Choose the appropriate version of JMeter for your operating system (e.g., Window
 2. Once the download is complete, extract the downloaded file to a directory of your choice. This will create the JMeter installation directory.
 3. Before running JMeter, make sure you have Java Development Kit (JDK) installed on your system. JMeter requires JDK to run.
 4. Configure the environment variables for Java. This step may vary depending on your operating system. 
->&nbsp;&nbsp;&nbsp;&nbsp;`For Windows`: Set JAVA_HOME environment variable to the directory where JDK is installed   
-&nbsp;&nbsp;&nbsp;&nbsp;(e.g., C:\Program Files\Java\jdk1.x.x_xx).  
->&nbsp;&nbsp;&nbsp;&nbsp;`For Linux/macOS`: Set JAVA_HOME environment variable in your shell profile   
-&nbsp;&nbsp;&nbsp;&nbsp;(e.g., ~/.bash_profile).
+    >`For Windows`: Set JAVA_HOME environment variable to the directory where JDK is installed   
+    (e.g., C:\Program Files\Java\jdk1.x.x_xx).  
+    >`For Linux/macOS`: Set JAVA_HOME environment variable in your shell profile   
+    (e.g., ~/.bash_profile).
 5. Open a command prompt or terminal and navigate to the JMeter bin directory.
 6. Run the JMeter executable file:
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`For Windows`: Run jmeter.bat  
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`For Linux/macOS`: Run ./jmeter.sh
+    >`For Windows`: Run jmeter.bat  
+    >`For Linux/macOS`: Run ./jmeter.sh
 7. JMeter will start, and you can begin using it to create and execute performance tests.
 
 ```
@@ -98,33 +98,30 @@ Response: 200 OK
 
 1. Launch JMeter
 
-  Open a shell window, navigate to the bin directory where JMeter is installed and provide the JMeter executable file.
-  ```
-  bin % ./jmeter.sh
-  ```
-2. Create an API Test Plan
+    Open a shell window, navigate to the bin directory where JMeter is installed and provide the JMeter executable file.
+    ```
+    bin % ./jmeter.sh
+    ```
+1. Create an API Test Plan
 
-  In the JMeter interface, rename the default Test Plan to 'API Test Plan`.
+    In the JMeter interface, rename the default Test Plan to 'API Test Plan`.
 
-  <kbd>
-  ![alt text](assets/1.png)
-  </kbd>
+    ![alt text](assets/1.png)
 
-3. Add a Thread Group
+1. Add a Thread Group
 
-  Right-click on the `API Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users.
+    Right-click on the `API Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users.
+    <kbd>
+    ![alt text](assets/2.png)
+    </kbd>
 
-  <kbd>
-  ![alt text](assets/2.png)
-  </kbd>
+1. Configure the Thread Group
 
-4. Configure the Thread Group
+    Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
 
-  Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
-
-  <kbd>
-  ![alt text](assets/3.png)
-  </kbd>
+    <kbd>
+    ![alt text](assets/3.png)
+    </kbd>
 
 5. Add an HTTP Request Sampler
 
