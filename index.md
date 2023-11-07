@@ -29,14 +29,14 @@ Choose the appropriate version of JMeter for your operating system (e.g., Window
 4. Configure the environment variables for Java. This step may vary depending on your operating system. 
     >`For Windows`: Set JAVA_HOME environment variable to the directory where JDK is installed   
     (e.g., <b>C:\Program Files\Java\jdk1.x.x_xx</b>).  
+
     >`For Linux/macOS`: Set JAVA_HOME environment variable in your shell profile   
     (e.g., <b>~/.bash_profile</b>).
 5. Open a command prompt or terminal and navigate to the JMeter bin directory.
 6. Run the JMeter executable file:
-    >`For Windows`: Run <b>jmeter.bat</b>
+    >`For Windows`: Run <b>jmeter.bat</b>  
     >`For Linux/macOS`: Run <b>./jmeter.sh</b>
 7. JMeter will start, and you can begin using it to create and execute performance tests.
-
     ```
     Make sure to refer to the official JMeter documentation for detailed instructions.
     ```
@@ -83,7 +83,6 @@ For the purpose of this test, we will use one of the NASA Api's.
   curl --request GET \
     --url 'https://api.nasa.gov/insight_weather/?api_key=IxpTyqs8LnclBrUq88cIdf99zftbzPgHYbmEzb1V&feedtype=json&ver=1.0' \
   ```
-
   | Parameter | In | Type | Required |
   | :--- | :--- | :--- |:--- |
   | `api_key` | `query` | `string`| `true` |
@@ -103,7 +102,7 @@ Response: 200 OK
     ```
     bin % ./jmeter.sh
     ```
-    
+
 1. Create an API Test Plan
 
     In the JMeter interface, rename the default Test Plan to 'API Test Plan`.
@@ -124,96 +123,96 @@ Response: 200 OK
 
 1. Add an HTTP Request Sampler
 
-  Right-click on the Thread Group, select "Add" -> "Sampler" -> "HTTP Request". This will add an HTTP Request Sampler to the Thread Group.
+    Right-click on the Thread Group, select "Add" -> "Sampler" -> "HTTP Request". This will add an HTTP Request Sampler to the Thread Group.
 
-  ![alt text](assets/4.png)
+    ![alt text](assets/4.png)
 
 1. Configure the HTTP Request Sampler
-  Provide the necessary details such as the server name or IP address, port, protocol, path, and method (GET, POST, etc.) in the HTTP Request Sampler. You can also add parameters, headers, and body data as required.
+    Provide the necessary details such as the server name or IP address, port, protocol, path, and method (GET, POST, etc.) in the HTTP Request Sampler. You can also add parameters, headers, and body data as required.
 
-  ![alt text](assets/5.png)
+    ![alt text](assets/5.png)
 
 1. Add Listeners
-  Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" and choose the desired listener, such as "View Results Tree" or "Summary Report".
+    Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" and choose the desired listener, such as "View Results Tree" or "Summary Report".
 
-  ![alt text](assets/6.png)
+    ![alt text](assets/6.png)
 
 1. Run the Test
-  Click on the "Play" button in the JMeter toolbar to start the test execution. JMeter will send requests to the specified API endpoints based on the configured settings.
+    Click on the "Play" button in the JMeter toolbar to start the test execution. JMeter will send requests to the specified API endpoints based on the configured settings.
 
-  ![alt text](assets/7.png)
+    ![alt text](assets/7.png)
 
 1. Analyze the Results
-  Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the API.
+    Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the API.
 
-  ![alt text](assets/8.png)
+    ![alt text](assets/8.png)
 
 1. Customize and Enhance the Test
-  JMeter provides various options to customize and enhance your API tests. You can add assertions to validate response data, use timers to introduce delays between requests, and incorporate logic controllers to create complex test scenarios.
+    JMeter provides various options to customize and enhance your API tests. You can add assertions to validate response data, use timers to introduce delays between requests, and incorporate logic controllers to create complex test scenarios.
 
 ## JMeter for UI Testing
 
 1. Create a UI Test Plan
 
-  In the JMeter interface, rename the default Test Plan to 'UI Test Plan`.
+    In the JMeter interface, rename the default Test Plan to 'UI Test Plan`.
 
-  ![alt text](assets/1a.png)
+    ![alt text](assets/1a.png)
 
 1. Add and Configure a Thread Group
 
-  Right-click on the `UI Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users. Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
+    Right-click on the `UI Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users. Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
 
-  ![alt text](assets/2a.png)
+    ![alt text](assets/2a.png)
 
 1. Download Chrome Driver
 
-  Download the chromedriver compatible with your chrome browser version from [here] (https://chromedriver.storage.googleapis.com/). Rename it to `chromedriver` and place it in your jmeter bin directory.
+    Download the chromedriver compatible with your chrome browser version from [here] (https://chromedriver.storage.googleapis.com/). Rename it to `chromedriver` and place it in your jmeter bin directory.
 
 1. Add ChromeDriver Config Element
 
-  Right-click on the `UI Test Plan` and select "Add" -> "Config Element" -> "Chrome Driver Config".
+    Right-click on the `UI Test Plan` and select "Add" -> "Config Element" -> "Chrome Driver Config".
 
-  ![alt text](assets/3a.png)
+    ![alt text](assets/3a.png)
 
 1. Configure the Chrome Driver Config
 
-  Click on the `Chrome Driver Config`, click on the "Chrome" tab in the center. Add the path to your config
-  ```
-  ${__P(driverPath, chromedriver)}
-  ```
+    Click on the `Chrome Driver Config`, click on the "Chrome" tab in the center. Add the path to your config
+    ```
+    ${__P(driverPath, chromedriver)}
+    ```
 
-  ![alt text](assets/4a.png)
+    ![alt text](assets/4a.png)
 
 1. Configure the Web Driver Sampler
 
-  Right-click on the `UI Test Plan` and select "Add" -> "Sampler" -> "Web Driver Sampler".
+    Right-click on the `UI Test Plan` and select "Add" -> "Sampler" -> "Web Driver Sampler".
 
-  ![alt text](assets/5a.png)
+    ![alt text](assets/5a.png)
 
 1. Configure the script for Web Driver Sampler
 
-  Click on the `Web Driver Sampler` and place the below script in the `script` section.
+    Click on the `Web Driver Sampler` and place the below script in the `script` section.
 
-  ```
-  WDS.sampleResult.sampleStart()
-  WDS.browser.get('http://jmeter-plugins.org')
-  WDS.sampleResult.sampleEnd()
-  ```
+    ```
+    WDS.sampleResult.sampleStart()
+    WDS.browser.get('http://jmeter-plugins.org')
+    WDS.sampleResult.sampleEnd()
+    ```
 
-  ![alt text](assets/6a.png)
+    ![alt text](assets/6a.png)
 
 1. Add Listeners
 
-  Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" -> "Summary Report".
+    Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" -> "Summary Report".
 
-  ![alt text](assets/7a.png)
+    ![alt text](assets/7a.png)
 
 1. Run the Test
 
-  Click on the `Play` button in the JMeter toolbar to start the test execution. JMeter will open Chrome browser sessions based on your configured thread group settings.
+    Click on the `Play` button in the JMeter toolbar to start the test execution. JMeter will open Chrome browser sessions based on your configured thread group settings.
 
 1. Analyze the Results
 
-  Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the UI in the Summary Report.
+    Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the UI in the Summary Report.
 
-  ![alt text](assets/8a.png)
+    ![alt text](assets/8a.png)
