@@ -4,4 +4,4 @@ relative_links:
   enabled: true
   collections: true
   
-theme: zendesk/jekyll-theme-zendesk-garden@main
+theme: jekyll-theme-edition
