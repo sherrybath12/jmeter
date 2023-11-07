@@ -106,45 +106,61 @@ bin % ./jmeter.sh
 
 In the JMeter interface, rename the default Test Plan to 'API Test Plan`.
 
+<kbd>
 ![alt text](assets/1.png)
+</kbd>
 
 3. Add a Thread Group
 
 Right-click on the `API Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users.
 
+<kbd>
 ![alt text](assets/2.png)
+</kbd>
 
 4. Configure the Thread Group
 
 Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
 
+<kbd>
 ![alt text](assets/3.png)
+</kbd>
 
 5. Add an HTTP Request Sampler
 
 Right-click on the Thread Group, select "Add" -> "Sampler" -> "HTTP Request". This will add an HTTP Request Sampler to the Thread Group.
 
+<kbd>
 ![alt text](assets/4.png)
+</kbd>
 
 6. Configure the HTTP Request Sampler
 Provide the necessary details such as the server name or IP address, port, protocol, path, and method (GET, POST, etc.) in the HTTP Request Sampler. You can also add parameters, headers, and body data as required.
 
+<kbd>
 ![alt text](assets/5.png)
+</kbd>
 
 7. Add Listeners
 Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" and choose the desired listener, such as "View Results Tree" or "Summary Report".
 
+<kbd>
 ![alt text](assets/6.png)
+</kbd>
 
 8. Run the Test
 Click on the "Play" button in the JMeter toolbar to start the test execution. JMeter will send requests to the specified API endpoints based on the configured settings.
 
+<kbd>
 ![alt text](assets/7.png)
+</kbd>
 
 9. Analyze the Results
 Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the API.
 
+<kbd>
 ![alt text](assets/8.png)
+</kbd>
 
 10. Customize and Enhance the Test
 JMeter provides various options to customize and enhance your API tests. You can add assertions to validate response data, use timers to introduce delays between requests, and incorporate logic controllers to create complex test scenarios.
@@ -157,13 +173,17 @@ https://chromedriver.storage.googleapis.com/
 
 In the JMeter interface, rename the default Test Plan to 'UI Test Plan`.
 
+<kbd>
 ![alt text](assets/1a.png)
+</kbd>
 
 3. Add and Configure a Thread Group
 
 Right-click on the `UI Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users. Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
 
+<kbd>
 ![alt text](assets/2a.png)
+</kbd>
 
 4. Download Chrome Driver
 
@@ -173,7 +193,9 @@ Download the chromedriver compatible with your chrome browser version from [here
 
 Right-click on the `UI Test Plan` and select "Add" -> "Config Element" -> "Chrome Driver Config".
 
+<kbd>
 ![alt text](assets/3a.png)
+</kbd>
 
 6. Configure the Chrome Driver Config
 
@@ -182,13 +204,17 @@ Click on the `Chrome Driver Config`, click on the "Chrome" tab in the center. Ad
 ${__P(driverPath, chromedriver)}
 ```
 
+<kbd>
 ![alt text](assets/4a.png)
+</kbd>
 
 7. Configure the Web Driver Sampler
 
 Right-click on the `UI Test Plan` and select "Add" -> "Sampler" -> "Web Driver Sampler".
 
+<kbd>
 ![alt text](assets/5a.png)
+</kbd>
 
 8. Configure the script for Web Driver Sampler
 
@@ -199,13 +225,18 @@ WDS.sampleResult.sampleStart()
 WDS.browser.get('http://jmeter-plugins.org')
 WDS.sampleResult.sampleEnd()
 ```
+
+<kbd>
 ![alt text](assets/6a.png)
+</kbd>
 
 9. Add Listeners
 
 Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" -> "Summary Report".
 
+<kbd>
 ![alt text](assets/7a.png)
+</kbd>
 
 10. Run the Test
 
@@ -215,5 +246,6 @@ Click on the `Play` button in the JMeter toolbar to start the test execution. JM
 
 Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the UI in the Summary Report.
 
+<kbd>
 ![alt text](assets/8a.png)
-
+</kbd>
