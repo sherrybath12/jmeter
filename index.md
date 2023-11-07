@@ -38,7 +38,7 @@ Choose the appropriate version of JMeter for your operating system (e.g., Window
 7. JMeter will start, and you can begin using it to create and execute performance tests.
 
 ```
-Make sure to refer to the official JMeter documentation for more detailed instructions.
+Make sure to refer to the official JMeter documentation for detailed instructions.
 ```
 
 ## JMeter Components
@@ -67,7 +67,7 @@ JMeter has several components. Below is a explanation of each component:
 5. Open the jmx file under the TestPlans folder - this folder contains two file `API_Test_Plan.jmx` and `UI_Test_Plan.jmx`.
 6. With the jmx file opened, click on the green `Run` button to run the jmeter tests and view the results using a listener (e.g. Summary Report).
 
-> [!IMPORTANT] 
+> IMPORTANT  
 > This repository uses Chrome version 113.0.5672.63 for UI tests.
 
 ## API Request Response Overview
@@ -98,154 +98,152 @@ Response: 200 OK
 
 1. Launch JMeter
 
-Open a shell window, navigate to the bin directory where JMeter is installed and provide the JMeter executable file.
-```
-bin % ./jmeter.sh
-```
+  Open a shell window, navigate to the bin directory where JMeter is installed and provide the JMeter executable file.
+  ```
+  bin % ./jmeter.sh
+  ```
 2. Create an API Test Plan
 
-In the JMeter interface, rename the default Test Plan to 'API Test Plan`.
+  In the JMeter interface, rename the default Test Plan to 'API Test Plan`.
 
-<kbd>
-![alt text](assets/1.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/1.png)
+  </kbd>
 
 3. Add a Thread Group
 
-Right-click on the `API Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users.
+  Right-click on the `API Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users.
 
-<kbd>
-![alt text](assets/2.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/2.png)
+  </kbd>
 
 4. Configure the Thread Group
 
-Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
+  Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
 
-<kbd>
-![alt text](assets/3.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/3.png)
+  </kbd>
 
 5. Add an HTTP Request Sampler
 
-Right-click on the Thread Group, select "Add" -> "Sampler" -> "HTTP Request". This will add an HTTP Request Sampler to the Thread Group.
+  Right-click on the Thread Group, select "Add" -> "Sampler" -> "HTTP Request". This will add an HTTP Request Sampler to the Thread Group.
 
-<kbd>
-![alt text](assets/4.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/4.png)
+  </kbd>
 
 6. Configure the HTTP Request Sampler
-Provide the necessary details such as the server name or IP address, port, protocol, path, and method (GET, POST, etc.) in the HTTP Request Sampler. You can also add parameters, headers, and body data as required.
+  Provide the necessary details such as the server name or IP address, port, protocol, path, and method (GET, POST, etc.) in the HTTP Request Sampler. You can also add parameters, headers, and body data as required.
 
-<kbd>
-![alt text](assets/5.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/5.png)
+  </kbd>
 
 7. Add Listeners
-Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" and choose the desired listener, such as "View Results Tree" or "Summary Report".
+  Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" and choose the desired listener, such as "View Results Tree" or "Summary Report".
 
-<kbd>
-![alt text](assets/6.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/6.png)
+  </kbd>
 
 8. Run the Test
-Click on the "Play" button in the JMeter toolbar to start the test execution. JMeter will send requests to the specified API endpoints based on the configured settings.
+  Click on the "Play" button in the JMeter toolbar to start the test execution. JMeter will send requests to the specified API endpoints based on the configured settings.
 
-<kbd>
-![alt text](assets/7.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/7.png)
+  </kbd>
 
 9. Analyze the Results
-Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the API.
+  Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the API.
 
-<kbd>
-![alt text](assets/8.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/8.png)
+  </kbd>
 
 10. Customize and Enhance the Test
-JMeter provides various options to customize and enhance your API tests. You can add assertions to validate response data, use timers to introduce delays between requests, and incorporate logic controllers to create complex test scenarios.
+  JMeter provides various options to customize and enhance your API tests. You can add assertions to validate response data, use timers to introduce delays between requests, and incorporate logic controllers to create complex test scenarios.
 
 ## JMeter for UI Testing
 
-https://chromedriver.storage.googleapis.com/
+1. Create a UI Test Plan
 
-2. Create a UI Test Plan
+  In the JMeter interface, rename the default Test Plan to 'UI Test Plan`.
 
-In the JMeter interface, rename the default Test Plan to 'UI Test Plan`.
+  <kbd>
+  ![alt text](assets/1a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/1a.png)
-</kbd>
+2. Add and Configure a Thread Group
 
-3. Add and Configure a Thread Group
+  Right-click on the `UI Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users. Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
 
-Right-click on the `UI Test Plan` and select "Add" -> "Threads (Users)" -> "Thread Group". This will create a Thread Group element, which represents a group of users. Set the desired number of threads (virtual users) and the ramp-up period (time to start all threads) in the Thread Group element. You can also specify the loop count and duration of the test.
+  <kbd>
+  ![alt text](assets/2a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/2a.png)
-</kbd>
+3. Download Chrome Driver
 
-4. Download Chrome Driver
+  Download the chromedriver compatible with your chrome browser version from [here] (https://chromedriver.storage.googleapis.com/). Rename it to `chromedriver` and place it in your jmeter bin directory.
 
-Download the chromedriver compatible with your chrome browser version from [here] (https://chromedriver.storage.googleapis.com/). Rename it to `chromedriver` and place it in your jmeter bin directory.
+4. Add ChromeDriver Config Element
 
-5. Add ChromeDriver Config Element
+  Right-click on the `UI Test Plan` and select "Add" -> "Config Element" -> "Chrome Driver Config".
 
-Right-click on the `UI Test Plan` and select "Add" -> "Config Element" -> "Chrome Driver Config".
+  <kbd>
+  ![alt text](assets/3a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/3a.png)
-</kbd>
+5. Configure the Chrome Driver Config
 
-6. Configure the Chrome Driver Config
+  Click on the `Chrome Driver Config`, click on the "Chrome" tab in the center. Add the path to your config
+  ```
+  ${__P(driverPath, chromedriver)}
+  ```
 
-Click on the `Chrome Driver Config`, click on the "Chrome" tab in the center. Add the path to your config
-```
-${__P(driverPath, chromedriver)}
-```
+  <kbd>
+  ![alt text](assets/4a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/4a.png)
-</kbd>
+6. Configure the Web Driver Sampler
 
-7. Configure the Web Driver Sampler
+  Right-click on the `UI Test Plan` and select "Add" -> "Sampler" -> "Web Driver Sampler".
 
-Right-click on the `UI Test Plan` and select "Add" -> "Sampler" -> "Web Driver Sampler".
+  <kbd>
+  ![alt text](assets/5a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/5a.png)
-</kbd>
+7. Configure the script for Web Driver Sampler
 
-8. Configure the script for Web Driver Sampler
+  Click on the `Web Driver Sampler` and place the below script in the `script` section.
 
-Click on the `Web Driver Sampler` and place the below script in the `script` section.
+  ```
+  WDS.sampleResult.sampleStart()
+  WDS.browser.get('http://jmeter-plugins.org')
+  WDS.sampleResult.sampleEnd()
+  ```
 
-```
-WDS.sampleResult.sampleStart()
-WDS.browser.get('http://jmeter-plugins.org')
-WDS.sampleResult.sampleEnd()
-```
+  <kbd>
+  ![alt text](assets/6a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/6a.png)
-</kbd>
+8. Add Listeners
 
-9. Add Listeners
+  Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" -> "Summary Report".
 
-Listeners are used to view and analyze the test results. Right-click on the Thread Group, select "Add" -> "Listener" -> "Summary Report".
+  <kbd>
+  ![alt text](assets/7a.png)
+  </kbd>
 
-<kbd>
-![alt text](assets/7a.png)
-</kbd>
+9. Run the Test
 
-10. Run the Test
+  Click on the `Play` button in the JMeter toolbar to start the test execution. JMeter will open Chrome browser sessions based on your configured thread group settings.
 
-Click on the `Play` button in the JMeter toolbar to start the test execution. JMeter will open Chrome browser sessions based on your configured thread group settings.
+10. Analyze the Results
 
-11. Analyze the Results
+  Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the UI in the Summary Report.
 
-Once the test execution is complete, analyze the results using the chosen listeners. You can view response times, error rates, and other metrics to evaluate the performance and functionality of the UI in the Summary Report.
-
-<kbd>
-![alt text](assets/8a.png)
-</kbd>
+  <kbd>
+  ![alt text](assets/8a.png)
+  </kbd>
