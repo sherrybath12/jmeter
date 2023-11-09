@@ -22,8 +22,7 @@ JMeter is an open-source performance testing tool that is widely used for testin
 
 ## Configuring JMeter
 
-1. Go to the official JMeter website [downloads] (https://jmeter.apache.org/download_jmeter.cgi)
-Choose the appropriate version of JMeter for your operating system (e.g., Windows, Linux, macOS) and click on the download link.
+1. Go to the official JMeter [website](https://jmeter.apache.org/download_jmeter.cgi) and choose the appropriate version of JMeter for your operating system (e.g., Windows, Linux, macOS) and click on the download link.
 2. Once the download is complete, extract the downloaded file to a directory of your choice. This will create the JMeter installation directory.
 3. Before running JMeter, make sure you have Java Development Kit (JDK) installed on your system. JMeter requires JDK to run.
 4. Configure the environment variables for Java. This step may vary depending on your operating system. 
