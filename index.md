@@ -12,7 +12,7 @@ permalink: /
 2. [Configuring JMeter](#configuring-jmeter)
 3. [JMeter Components](#jmeter-components)
 4. [Quick Start Guide](#quick-start-guide)
-5. [API Request and Response Overview](#api-request-response-review)
+5. [API Request and Response Overview](#api-request-response-overview)
 6. [JMeter for API Testing](#jmeter-for-api-testing)
 7. [JMeter for UI Testing](#jmeter-for-ui-testing)
 
